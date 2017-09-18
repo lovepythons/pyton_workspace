@@ -39,6 +39,15 @@ def fun1():
     print sorted(list(res));
 
 
+def fun2():
+	'''
+	去除重复的数据，并排序
+	'''
+	lst = [4, 7, 3, 4, 1, 9, 8, 3, 7];
+	res = set(lst)
+	lst = list(res)
+	print sorted(lst)
+
 
 if __name__=="__main__":
-    fun1();
+    fun2();
