@@ -54,12 +54,18 @@ def fun3():
 	'''
 	text = "aAsmr3idd4bgs7Dlsf9eAF";
 	lst = [];
-	for c in text:
-		try:
-			int(c);
-		except:
-			continue;
-		lst.append(c);
+#	for c in text:
+#		try:
+#			int(c);
+#		except:
+#			continue;
+#		lst.append(c);
+
+#	for c in text:
+#		if c.isdigit():
+#			lst.append(c);
+	
+	lst = [i for i in text if i.isdigit()];
 	print ''.join(lst);
 
 if __name__=="__main__":
