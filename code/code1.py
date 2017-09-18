@@ -48,6 +48,19 @@ def fun2():
 	lst = list(res)
 	print sorted(lst)
 
+def fun3():
+	'''
+	找到数字， 重组成字符串
+	'''
+	text = "aAsmr3idd4bgs7Dlsf9eAF";
+	lst = [];
+	for c in text:
+		try:
+			int(c);
+		except:
+			continue;
+		lst.append(c);
+	print ''.join(lst);
 
 if __name__=="__main__":
-    fun2();
+    fun3();
